@@ -66,23 +66,27 @@ const Home = () => {
   };
 
   const handleSubmit = async () => {
-    // Send email
-    const templateParams = {
-      to_email: formData.email,
-      to_name: formData.name,
-      service_name: formData.service,
-    };
+    try {
+      // Send email
+      const templateParams = {
+        to_email: formData.email,
+        to_name: formData.name,
+        service_name: formData.service,
+      };
 
-    if (errorValidator()) {
-      await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        templateParams,
-        import.meta.env.VITE_EMAILJS_USER_ID
-      );
+      if (errorValidator()) {
+        await emailjs.send(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          templateParams,
+          import.meta.env.VITE_EMAILJS_USER_ID
+        );
 
-      // Show confirmation message
-      setConfirmation(true);
+        // Show confirmation message
+        setConfirmation(true);
+      }
+    } catch (error) {
+      console.error("EmailJS send error:", error);
     }
   };
 
