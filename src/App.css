@@ -1,0 +1,76 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.bg-color{
+  width: 30vw;
+  height: 42vh;
+  border: 2px solid #ffffff;
+  background-color: rgb(60, 222, 120);
+  border-radius: 0.5rem;
+}
+
+.form-content{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.label-content{
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.4rem;
+  color: #000000;
+}
+
+.input-content{
+  padding: 0.2rem;
+  margin: 1rem;
+  font-size: medium;
+  text-align: center;
+  background-color: aliceblue !important;
+  color: #000000 !important;
+  border-radius: 0.4rem;
+  width: 18vw;
+}
+
+.no-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.current-step{
+  color: #000000;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.select-content{
+  padding: 0.2rem;
+  font-size: medium;
+  text-align: center;
+  background-color: aliceblue !important;
+  color: #000000 !important;
+  border-radius: 0.4rem;
+  width: 18vw;
+}
+
+.confirm-content{
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 500
+}
+
+.greet-msg{
+  font-style: italic;
+  color: #000000;
+}
+
+.input-error{
+  color: #ff0000;  
+}
