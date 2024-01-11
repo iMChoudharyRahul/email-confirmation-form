@@ -64,9 +64,11 @@ const Form = (props) => {
             onChange={handleInputChange}
           >
             <option value="">Select a service</option>
-            <option value="technical-service">Technical services</option>
-            <option value="cloud-service">Cloud Service</option>
-            <option value="computer-service">Computer Backup Service</option>
+            <option value="technical service">Technical services</option>
+            <option value="cloud service">Cloud Service</option>
+            <option value="computer service">Computer Service</option>
+            <option value="fronted service">Fronted Service</option>
+            <option value="backend service">Backend Service</option>
           </select>
           <div className="input-error">{errorMsg.serviceError}</div>
           <br />
