@@ -75,14 +75,12 @@ const Home = () => {
       };
 
       if (errorValidator()) {
-       const response = await emailjs.send(
+        await emailjs.send(
           import.meta.env.VITE_REACT_APP_SERVICE_ID,
           import.meta.env.VITE_REACT_APP_TEMPLATE_ID,
           templateParams,
           import.meta.env.VITE_REACT_APP_USER_ID
         );
-     console.log("Check Email JS Response", response);
-     console.log("Check Public Key: ", import.meta.env.VITE_REACT_APP_USER_ID);
         // Show confirmation message
         setConfirmation(true);
       }
