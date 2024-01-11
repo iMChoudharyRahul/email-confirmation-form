@@ -5,52 +5,56 @@
   text-align: center;
 }
 
-.bg-color{
+.input-content:-webkit-autofill,
+.select-content:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: #000000 !important;
+}
+
+.bg-color {
   width: 30vw;
   height: 42vh;
-  border: 2px solid #ffffff;
-  background-color: rgb(60, 222, 120);
+  background-color: #ffffff;
   border-radius: 0.5rem;
 }
 
-.form-content{
+.form-content {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   flex-direction: column;
 }
 
-.label-content{
+.label-content {
   font-size: 1.2rem;
   font-weight: 600;
   padding: 0.4rem;
   color: #000000;
 }
 
-.input-content{
+.input-content {
   padding: 0.2rem;
   margin: 1rem;
   font-size: medium;
   text-align: center;
-  background-color: aliceblue !important;
+  background: aliceblue !important;
   color: #000000 !important;
   border-radius: 0.4rem;
   width: 18vw;
 }
 
-.no-content{
+.no-content {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.current-step{
+.current-step {
   color: #000000;
   font-weight: 700;
   font-size: 2rem;
 }
 
-.select-content{
+.select-content {
   padding: 0.2rem;
   font-size: medium;
   text-align: center;
@@ -60,17 +64,17 @@
   width: 18vw;
 }
 
-.confirm-content{
+.confirm-content {
   color: #000000;
   font-size: 1rem;
   font-weight: 500
 }
 
-.greet-msg{
+.greet-msg {
   font-style: italic;
   color: #000000;
 }
 
-.input-error{
-  color: #ff0000;  
+.input-error {
+  color: #ff0000;
 }
